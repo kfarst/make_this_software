@@ -15,8 +15,8 @@ gem 'unicorn'
 group :development, :test do
   gem 'rspec'
   gem 'rspec-rails'
-  gem 'ruby-debug19', :require => 'ruby-debug'
   gem 'factory_girl'
+  gem 'pry'
 end
 
 gem "hobo", "= 1.3.0"
