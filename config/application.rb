@@ -8,6 +8,16 @@ Bundler.require(:default, Rails.env) if defined?(Bundler)
 
 module MakeThisSoftware
   class Application < Rails::Application
+  
+  config.hobo.dryml_only_templates = true
+
+  
+    config.generators do |g|
+      g.test_framework :rspec, :fixtures => false
+      g.fallbacks[:rspec] = :test_unit
+      g.fixture_replacement = :factory_girl
+    end
+
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
