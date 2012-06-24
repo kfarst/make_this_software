@@ -17,6 +17,7 @@ group :development, :test do
   gem "rspec-rails"
   gem 'factory_girl'
   gem 'pry'
+  gem 'pickle'
 end
 
 gem "hobo", "= 1.3.0"
