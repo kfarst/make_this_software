@@ -22,3 +22,4 @@ end
 
 gem "hobo", "= 1.3.0"
 gem "heroku"
+gem "hobo-jquery"
